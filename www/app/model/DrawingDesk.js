@@ -20,6 +20,10 @@ Ext.define("Webinar.model.DrawingDesk", {
         {
             name: 'pages',
             type: 'auto'
+        },
+        {
+            name: 'currentPage',
+            type: 'int'
         }
     ],
 
@@ -30,7 +34,12 @@ Ext.define("Webinar.model.DrawingDesk", {
         /**
          * Изменение состояния модели доски для рисования
          */
-        ModelChangedEvent: 'ModelChangedEvent'
+        ModelChangedEvent: 'ModelChangedEvent',
+
+        /**
+         * Событие изменения текущей страницы
+         */
+        CurrentPageChangedEvent: 'CurrentPageChangedEvent'
     },
 
     /**
@@ -71,8 +80,9 @@ Ext.define("Webinar.model.DrawingDesk", {
      * Задать массив спрайтов для отображения на доске
      * @param sprites {Array} Массив спрайтов
      */
-    setSprites: function(sprites) {
-        this.set('sprites', sprites);
+    setSprites: function(page, sprites) {
+        this.getPage(page).sprites = sprites;
+        //this.set('sprites', sprites);
         this.fireChangedEvent();
     },
 
@@ -80,23 +90,26 @@ Ext.define("Webinar.model.DrawingDesk", {
      * Получить массив спрайтов, присутствующих на доске
      * @return {Array} Массив спрайтов
      */
-    getSprites: function() {
-        return this.get('sprites');
+    getSprites: function(page) {
+        return this.getPage(page).sprites;
+        //return this.get('sprites');
     },
 
     /**
      * Очистить содержимое доски для рисования
      */
-    clearSurface: function() {
-        this.setSprites([]);
+    clearSurface: function(page) {
+        //this.setSprites([]);
+        this.getPage(page).sprites = [];
     },
 
     /**
      * Нарисовать элемент на доске для рисования
      * @param sprite {Object} Добавляемый элемент
      */
-    addSprite: function(sprite) {
-        this.getSprites().push(sprite);
+    addSprite: function(page, sprite) {
+        //this.getSprites().push(sprite);
+        this.getPage(page).sprites.push(sprite);
         this.fireChangedEvent();
     },
 
@@ -104,8 +117,9 @@ Ext.define("Webinar.model.DrawingDesk", {
      * Удалить элемент с доки для рисования
      * @param sprite {Object} Удаляемый элемент
      */
-    removeSprite: function(sprite) {
-        Ext.Array.remove(this.getSprites(), sprite);
+    removeSprite: function(page, sprite) {
+        //Ext.Array.remove(this.getSprites(), sprite);
+        Ext.Array.remove(this.getPage(page).sprites, sprite);
         this.fireChangedEvent();
     },
 
@@ -134,6 +148,15 @@ Ext.define("Webinar.model.DrawingDesk", {
     },
 
     /**
+     * Получить страницу с заданным номером index
+     * @param index {Number} Номер страницы
+     * @return {Object} Объект страницы
+     */
+    getPage: function(index) {
+        return this.getPages()[index - 1];
+    },
+
+    /**
      * Получить пустую страницу
      * @return {Object} Объект пустой страницы
      */
@@ -141,6 +164,22 @@ Ext.define("Webinar.model.DrawingDesk", {
         return {
             sprites: []
         };
+    },
+
+    /**
+     * Задать текущую страницу
+     * @param currentPage {Number} Номер текущей страницы
+     */
+    setCurrentPage: function(currentPage) {
+        this.set('currentPage', currentPage);
+    },
+
+    /**
+     * Получить номер текущей страницы
+     * @return {Number} Номер текущей страницы
+     */
+    getCurrentPage: function() {
+        return this.get('currentPage');
     },
 
     /**

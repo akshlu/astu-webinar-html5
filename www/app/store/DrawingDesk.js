@@ -12,7 +12,8 @@ Ext.define("Webinar.store.DrawingDesk", {
         sprites: [],
         pages: [{
             sprites: []
-        }]
+        }],
+        currentPage: 1
     }],
 
     communicateData: function(connection, event, data) {

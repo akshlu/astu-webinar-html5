@@ -82,7 +82,7 @@ Ext.define("Webinar.controller.DrawingDesk", {
      * Очистить содержимое доски для рисования
      */
     clearSurface: function() {
-        this.model.clearSurface();
+        this.model.clearSurface(this.model.getCurrentPage());
         this.surface.removeAll();
     },
 
@@ -124,12 +124,12 @@ Ext.define("Webinar.controller.DrawingDesk", {
                 var drawingObject = {
                     type: 'circle',
                     radius: me.getThickness() / 2,
-                    fill: controller.getColor(),
+                    fill: me.model.getCurrentColor(),
                     x: mouseCoordinates.x,
                     y: mouseCoordinates.y
                 };
 
-                me.model.addSprite(drawingObject);
+                me.model.addSprite(me.model.getCurrentPage(), drawingObject);
 
                 Webinar.connector.send(me.events.DRAW,drawingObject);
 
@@ -149,7 +149,7 @@ Ext.define("Webinar.controller.DrawingDesk", {
                         'stroke-linecap': 'round'
                     };
 
-                    me.model.addSprite(drawingObject);
+                    me.model.addSprite(me.model.getCurrentPage(), drawingObject);
 
                     Webinar.connector.send(
                         me.events.DRAW,
@@ -163,6 +163,7 @@ Ext.define("Webinar.controller.DrawingDesk", {
             },
             'mouseup': function(event) {
                 me.isMouseDown = false;
+                console.log(me.model.data);
             }/*,
             'mouseleave': function(event) {
                 me.isMouseDown = false;
