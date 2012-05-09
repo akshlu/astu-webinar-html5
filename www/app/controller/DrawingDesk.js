@@ -1,3 +1,6 @@
+/**
+ * Контроллер доски для рисования
+ */
 Ext.define("Webinar.controller.DrawingDesk", {
     extend: "Ext.app.Controller",
     models: [
@@ -6,12 +9,6 @@ Ext.define("Webinar.controller.DrawingDesk", {
     stores: [
         'DrawingDesk'
     ],
-
-    stateManager: Ext.create('Webinar.state.DrawingDeskStateManager'),
-
-    init: function() {
-
-    },
 
     events: {
         DRAW: 'DrawingDeskDrawEvent',
@@ -24,9 +21,13 @@ Ext.define("Webinar.controller.DrawingDesk", {
     onLaunch: function() {
 
         var me = this;
-
         var store = this.getDrawingDeskStore();
         this.model = store.first();
+        console.log(store.first());
+
+        this.model.on(this.model.events.ModelChangedEvent, function(model) {
+            store.loadData([model]);
+        });
 
         this.control({
             '#drawingDeskClearButton': {
@@ -63,8 +64,6 @@ Ext.define("Webinar.controller.DrawingDesk", {
             this.initSurface();
         }
 
-        this.spritesArray = [];
-
         var drawableComponent = this.drawingdesk.getComponent("drawingDeskDrawablePanel").getComponent("drawingDeskDrawableComponent");
         var me = this;
         this.drawingdesk.on({
@@ -76,7 +75,11 @@ Ext.define("Webinar.controller.DrawingDesk", {
         this.initNetworkHandlers();
     },
 
+    /**
+     * Очистить содержимое доски для рисования
+     */
     clearSurface: function() {
+        this.model.clearSurface();
         this.surface.removeAll();
     },
 
@@ -121,6 +124,8 @@ Ext.define("Webinar.controller.DrawingDesk", {
                     y: mouseCoordinates.y
                 };
 
+                me.model.addSprite(drawingObject);
+
                 Webinar.connector.send(me.events.DRAW,drawingObject);
 
                 surface.add(drawingObject).show(true);
@@ -139,7 +144,7 @@ Ext.define("Webinar.controller.DrawingDesk", {
                         'stroke-linecap': 'round'
                     };
 
-                    me.spritesArray.push(drawingObject);
+                    me.model.addSprite(drawingObject);
 
                     Webinar.connector.send(
                         me.events.DRAW,

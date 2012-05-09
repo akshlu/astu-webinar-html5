@@ -12,8 +12,22 @@ Ext.define("Webinar.model.DrawingDesk", {
         {
             name: 'thickness',
             type: "Number"
+        },
+        {
+            name: 'sprites',
+            type: 'Array'
         }
     ],
+
+    /**
+     * События модели доски для рисования
+     */
+    events: {
+        /**
+         * Изменение состояния модели доски для рисования
+         */
+        ModelChangedEvent: 'ModelChangedEvent'
+    },
 
     /**
      * Получить текущий цвет
@@ -29,6 +43,7 @@ Ext.define("Webinar.model.DrawingDesk", {
      */
     setCurrentColor: function(currentColor) {
         this.set('currentColor', currentColor);
+        this.fireChangedEvent();
     },
 
     /**
@@ -45,28 +60,55 @@ Ext.define("Webinar.model.DrawingDesk", {
      */
     setThickness: function(thickness) {
         this.set('thickness', thickness);
+        this.fireChangedEvent();
+    },
+
+    /**
+     * Задать массив спрайтов для отображения на доске
+     * @param sprites {Array} Массив спрайтов
+     */
+    setSprites: function(sprites) {
+        this.set('sprites', sprites);
+        this.fireChangedEvent();
+    },
+
+    /**
+     * Получить массив спрайтов, присутствующих на доске
+     * @return {Array} Массив спрайтов
+     */
+    getSprites: function() {
+        return this.get('sprites');
     },
 
     /**
      * Очистить содержимое доски для рисования
      */
     clearSurface: function() {
-        throw new Error('Not implemented');
+        this.setSprites([]);
     },
 
     /**
      * Нарисовать элемент на доске для рисования
-     * @param surface {Object} Добавляемый элемент
+     * @param sprite {Object} Добавляемый элемент
      */
-    addSurface: function(surface) {
-        throw new Error('Not implemented');
+    addSprite: function(sprite) {
+        this.getSprites().push(sprite);
+        this.fireChangedEvent();
     },
 
     /**
      * Удалить элемент с доки для рисования
-     * @param surface {Object} Удаляемый элемент
+     * @param sprite {Object} Удаляемый элемент
      */
-    removeSurface: function(surface) {
-        throw new Error('Not implemented');
+    removeSprite: function(sprite) {
+        Ext.Array.remove(this.getSprites(), sprite);
+        this.fireChangedEvent();
+    },
+
+    /**
+     * Возбудить событие изменения модели
+     */
+    fireChangedEvent: function() {
+        this.fireEvent(this.events.ModelChangedEvent, this);
     }
 });

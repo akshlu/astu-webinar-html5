@@ -57,13 +57,8 @@ Ext.define("Webinar.view.DrawingDesk", {
             text: 'Ластик'
         });
 
-        var cancelButton = Ext.create('Ext.button.Button', {
-            itemId: 'drawingDeskCancelButton',
-            text: 'Отменить'
-        });
-
         this.tbar = [
-            colorButton, clearButton, penButton, eraserButton, slider, cancelButton
+            colorButton, clearButton, penButton, eraserButton, slider
         ];
 
         var drawableComponent = Ext.create("Ext.draw.Component", {

@@ -3,12 +3,13 @@ Ext.define("Webinar.store.DrawingDesk", {
     model: "Webinar.model.DrawingDesk",
 
     fields: [
-        'currentColor', 'thickness'
+        'currentColor', 'thickness', 'sprites'
     ],
 
     data: [{
         currentColor: "#444444",
-        thickness: 3
+        thickness: 3,
+        sprites: []
     }],
 
     saveState: function() {
