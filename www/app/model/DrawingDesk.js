@@ -7,15 +7,19 @@ Ext.define("Webinar.model.DrawingDesk", {
     fields: [
         {
             name: 'currentColor',
-            type: 'String'
+            type: 'string'
         },
         {
             name: 'thickness',
-            type: "Number"
+            type: "int"
         },
         {
             name: 'sprites',
-            type: 'Array'
+            type: 'auto'
+        },
+        {
+            name: 'pages',
+            type: 'auto'
         }
     ],
 
@@ -103,6 +107,40 @@ Ext.define("Webinar.model.DrawingDesk", {
     removeSprite: function(sprite) {
         Ext.Array.remove(this.getSprites(), sprite);
         this.fireChangedEvent();
+    },
+
+    /**
+     * Задать страницы
+     * @param pages {Array} Массив страниц
+     */
+    setPages: function(pages) {
+        this.pages.set('pages', pages);
+    },
+
+    /**
+     * Получить массив страниц
+     * @return {Array} Массив страниц
+     */
+    getPages: function() {
+        return this.get('pages');
+    },
+
+    /**
+     * Добавить новую страницу
+     * @param page {Object} Добавляемая страница
+     */
+    addPage: function(page) {
+        this.getPages().push(page);
+    },
+
+    /**
+     * Получить пустую страницу
+     * @return {Object} Объект пустой страницы
+     */
+    getBlankPage: function() {
+        return {
+            sprites: []
+        };
     },
 
     /**

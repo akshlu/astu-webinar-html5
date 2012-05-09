@@ -23,21 +23,11 @@ Ext.define("Webinar.controller.DrawingDesk", {
         var me = this;
         var store = this.getDrawingDeskStore();
         this.model = store.first();
-        console.log(store.first());
 
         this.model.on(this.model.events.ModelChangedEvent, function(model) {
-            store.loadData([model]);
         });
 
         this.control({
-            '#drawingDeskClearButton': {
-                scope: this,
-                click: function() {
-                    Webinar.connector.send(
-                        me.events.CLEAR);
-                    me.clearSurface();
-                }
-            },
             '#drawingdesk': {
                 scope: this,
                 render: function() {
@@ -47,6 +37,19 @@ Ext.define("Webinar.controller.DrawingDesk", {
             '#drawingDeskPenButton': {
                 click: function() {
 
+                }
+            },
+            '#drawingDeskSlider': {
+                change: function(slider, value) {
+                    me.model.setThickness(value);
+                }
+            },
+            '#drawingDeskClearButton': {
+                scope: this,
+                click: function() {
+                Webinar.connector.send(
+                    me.events.CLEAR);
+                    me.clearSurface();
                 }
             }
         });
@@ -91,9 +94,11 @@ Ext.define("Webinar.controller.DrawingDesk", {
     initColorPicker: function() {
         this.colorPicker = this.getColorPicker();
         var picker = this.picker;
+        var me = this;
         this.colorPicker.on({
             'select': function(object, color) {
                 picker.select(color);
+                me.model.setCurrentColor(color);
             }
         });
     },
@@ -139,8 +144,8 @@ Ext.define("Webinar.controller.DrawingDesk", {
                     var drawingObject = {
                         type: 'path',
                         path: ['M ' + me.oldMouseCoordinates.x + ' ' + me.oldMouseCoordinates.y + ' L ' + mouseCoordinates.x + ' ' + mouseCoordinates.y].join(''),
-                        stroke: me.getColor(),
-                        'stroke-width': me.getThickness(),
+                        stroke: me.model.getCurrentColor(),
+                        'stroke-width': me.model.getThickness(),
                         'stroke-linecap': 'round'
                     };
 

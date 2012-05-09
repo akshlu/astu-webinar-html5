@@ -7,10 +7,17 @@ Ext.define("Webinar.store.DrawingDesk", {
     ],
 
     data: [{
-        currentColor: "#444444",
+        currentColor: "#000000",
         thickness: 3,
-        sprites: []
+        sprites: [],
+        pages: [{
+            sprites: []
+        }]
     }],
+
+    communicateData: function(connection, event, data) {
+        connection.send(event, data);
+    },
 
     saveState: function() {
 
