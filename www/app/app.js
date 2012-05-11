@@ -8,16 +8,8 @@ Ext.Loader.setConfig({
 Ext.application({
     name: "Webinar",
 
-    models: [
-        'DrawingDesk'
-    ],
-
-    stores: [
-        'Participants'
-    ],
-
     controllers: [
-        'DrawingDesk', 'ParticipantsWidget'
+        'DrawingDesk', 'ParticipantsWidget', 'Chat'
     ],
 
     /**

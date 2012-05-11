@@ -7,6 +7,8 @@ Ext.define('Webinar.Configurator', {
 
     serverURL: 'http://127.0.0.1:8123',
     socketIOURL: 'http://127.0.0.1:8123/socket.io/socket.io.js',
+    streamURL: '',
+    streamPort: '',
 
     events: ['getSession'],
 
@@ -36,6 +38,18 @@ Ext.define('Webinar.Configurator', {
                 me.fireEvent('getSession', session);
             }
         });
+    },
+
+    /**
+     * Получить адрес и порт соединения с сервером видеовещания
+     * @return {Object} Адрес и порт сервера видеовещания
+     */
+    getStreamConnection: function() {
+        var me = this;
+        return {
+            streamURL: me.streamURL,
+            streamPort: me.streamPort
+        };
     }
 
 });

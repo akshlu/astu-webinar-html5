@@ -4,6 +4,7 @@ Ext.define('Webinar.Session', {
     id_user: '',
     id_webinar: '',
     status: '',
+    nameOfUser: '',
 
     init: function() {
     }

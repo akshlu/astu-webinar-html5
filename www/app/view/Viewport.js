@@ -55,7 +55,7 @@ Ext.define("Webinar.view.Viewport", {
 
         desk.show();
         //participants.show();
-        //chat.show();
+        chat.show();
 
         this.items = [
             panel
