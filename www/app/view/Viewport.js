@@ -26,6 +26,13 @@ Ext.define("Webinar.view.Viewport", {
             height: 400
         });
 
+        var flashVideo = Ext.create('Webinar.view.FlashVideo', {
+            width: 640,
+            height: 480,
+            x: 30,
+            y: 30
+        });
+
         var panel = Ext.create("Ext.window.Window", {
             title: "Webinar",
             layout: 'fit',
@@ -47,7 +54,7 @@ Ext.define("Webinar.view.Viewport", {
                 }
             ],
             items: [
-                desk, participants, chat
+                desk, participants, chat, flashVideo
             ]
         });
 
@@ -56,6 +63,7 @@ Ext.define("Webinar.view.Viewport", {
         desk.show();
         //participants.show();
         chat.show();
+        flashVideo.show();
 
         this.items = [
             panel

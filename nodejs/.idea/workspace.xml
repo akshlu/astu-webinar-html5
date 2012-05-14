@@ -2,113 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dca30bd7-0c2b-49c6-8fe9-171f584ab110" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/database.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../www/app/store/WebinarStore.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/.npmignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/changelog.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/examples/auth.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/examples/backpressure_drain.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/examples/eval.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/examples/extend.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/examples/file.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/examples/mget.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/examples/monitor.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/examples/multi.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/examples/multi2.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/examples/psubscribe.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/examples/pub_sub.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/examples/simple.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/examples/sort.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/examples/subqueries.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/examples/subquery.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/examples/unix_socket.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/examples/web_server.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/generate_commands.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/lib/commands.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/lib/parser/hiredis.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/lib/parser/javascript.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/lib/queue.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/lib/to_array.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/lib/util.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/multi_bench.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/node_modules/hiredis/.lock-wscript" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/node_modules/hiredis/Makefile" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/node_modules/hiredis/bench.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/node_modules/hiredis/build/.wafpickle-7" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/node_modules/hiredis/build/Release/hiredis.node" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/node_modules/hiredis/build/Release/hiredis_1.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/node_modules/hiredis/build/Release/reader_1.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/node_modules/hiredis/build/c4che/Release.cache.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/node_modules/hiredis/build/c4che/build.config.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/node_modules/hiredis/build/config.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/node_modules/hiredis/deps/hiredis/CHANGELOG.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/node_modules/hiredis/deps/hiredis/COPYING" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/node_modules/hiredis/deps/hiredis/Makefile" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/node_modules/hiredis/deps/hiredis/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/node_modules/hiredis/deps/hiredis/adapters/ae.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/node_modules/hiredis/deps/hiredis/adapters/libev.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/node_modules/hiredis/deps/hiredis/adapters/libevent.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/node_modules/hiredis/deps/hiredis/async.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/node_modules/hiredis/deps/hiredis/async.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/node_modules/hiredis/deps/hiredis/async.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/node_modules/hiredis/deps/hiredis/dict.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/node_modules/hiredis/deps/hiredis/dict.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/node_modules/hiredis/deps/hiredis/example-ae.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/node_modules/hiredis/deps/hiredis/example-libev.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/node_modules/hiredis/deps/hiredis/example-libevent.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/node_modules/hiredis/deps/hiredis/example.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/node_modules/hiredis/deps/hiredis/fmacros.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/node_modules/hiredis/deps/hiredis/hiredis.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/node_modules/hiredis/deps/hiredis/hiredis.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/node_modules/hiredis/deps/hiredis/hiredis.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/node_modules/hiredis/deps/hiredis/libhiredis.a" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/node_modules/hiredis/deps/hiredis/net.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/node_modules/hiredis/deps/hiredis/net.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/node_modules/hiredis/deps/hiredis/net.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/node_modules/hiredis/deps/hiredis/sds.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/node_modules/hiredis/deps/hiredis/sds.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/node_modules/hiredis/deps/hiredis/sds.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/node_modules/hiredis/deps/hiredis/test.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/node_modules/hiredis/hiredis.cc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/node_modules/hiredis/hiredis.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/node_modules/hiredis/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/node_modules/hiredis/parser_bench.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/node_modules/hiredis/reader.cc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/node_modules/hiredis/reader.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/node_modules/hiredis/test/reader.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/node_modules/hiredis/wscript" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/test.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/tests/buffer_bench.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/tests/hiredis_parser.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/tests/re_sub_test.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/tests/reconnect_test.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/tests/stress/codec.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/tests/stress/pubsub/pub.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/tests/stress/pubsub/run" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/tests/stress/pubsub/server.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/tests/stress/rpushblpop/pub.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/tests/stress/rpushblpop/run" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/tests/stress/rpushblpop/server.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/tests/stress/speed/00" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/tests/stress/speed/plot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/tests/stress/speed/size-rate.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/tests/stress/speed/speed.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/tests/sub_quit_test.js" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/redis/node_modules/hiredis/README" afterPath="$PROJECT_DIR$/server_logic.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../www/get_session.php" afterPath="$PROJECT_DIR$/../www/get_session.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server.js" afterPath="$PROJECT_DIR$/server.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../www/app/connection/SocketConnector.js" afterPath="$PROJECT_DIR$/../www/app/connection/SocketConnector.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../www/app/controller/Chat.js" afterPath="$PROJECT_DIR$/../www/app/controller/Chat.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../www/app/model/Chat.js" afterPath="$PROJECT_DIR$/../www/app/model/Chat.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../www/app/store/Chat.js" afterPath="$PROJECT_DIR$/../www/app/store/Chat.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../www/app/view/Chat.js" afterPath="$PROJECT_DIR$/../www/app/view/Chat.js" />
     </list>
     <ignored path="nodejs.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -260,8 +154,8 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="options.lastSelected" value="Errors" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -309,12 +203,11 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="1" width="1680" height="1025" extended-state="1" />
+    <frame x="0" y="1" width="1680" height="1025" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32915717" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32915717" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19079345" sideWeight="0.6708428" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -326,6 +219,7 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32915717" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -408,30 +302,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/sequelize/lib/associations/has-many.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="26" selection-start="372" selection-end="372" vertical-scroll-proportion="0.19953051">
-          <folding />
-        </state>
+        <state line="10" column="26" selection-start="372" selection-end="372" vertical-scroll-proportion="0.19953051" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/socket.io/lib/socket.io.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/socket.io/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/mysql/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/sequelize/examples/sequelize-with-options/app.js">
@@ -441,30 +327,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/mysql/lib/mysql.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/database.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="19" selection-start="1110" selection-end="1110" vertical-scroll-proportion="0.7406103">
-          <folding />
-        </state>
+        <state line="43" column="19" selection-start="1110" selection-end="1110" vertical-scroll-proportion="0.7406103" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server_logic.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="3" selection-start="121" selection-end="121" vertical-scroll-proportion="0.07981221">
-          <folding />
-        </state>
+        <state line="4" column="3" selection-start="121" selection-end="121" vertical-scroll-proportion="0.07981221" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="23" selection-start="67" selection-end="67" vertical-scroll-proportion="0.019953052">
-          <folding />
-        </state>
+        <state line="1" column="23" selection-start="67" selection-end="67" vertical-scroll-proportion="0.019953052" />
       </provider>
     </entry>
   </component>

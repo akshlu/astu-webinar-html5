@@ -5,8 +5,8 @@
 Ext.define('Webinar.Configurator', {
     extend: "Ext.util.Observable",
 
-    serverURL: 'http://127.0.0.1:8123',
-    socketIOURL: 'http://127.0.0.1:8123/socket.io/socket.io.js',
+    serverURL: 'http://192.168.1.2:8123',
+    socketIOURL: 'http://192.168.1.2:8123/socket.io/socket.io.js',
     streamURL: '',
     streamPort: '',
 
