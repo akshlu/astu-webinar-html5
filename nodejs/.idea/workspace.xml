@@ -1,7 +1,115 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dca30bd7-0c2b-49c6-8fe9-171f584ab110" name="Default" comment="" />
+    <list default="true" id="dca30bd7-0c2b-49c6-8fe9-171f584ab110" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/database.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../www/app/store/WebinarStore.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/changelog.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/examples/auth.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/examples/backpressure_drain.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/examples/eval.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/examples/extend.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/examples/file.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/examples/mget.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/examples/monitor.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/examples/multi.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/examples/multi2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/examples/psubscribe.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/examples/pub_sub.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/examples/simple.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/examples/sort.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/examples/subqueries.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/examples/subquery.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/examples/unix_socket.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/examples/web_server.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/generate_commands.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/lib/commands.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/lib/parser/hiredis.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/lib/parser/javascript.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/lib/queue.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/lib/to_array.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/lib/util.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/multi_bench.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/node_modules/hiredis/.lock-wscript" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/node_modules/hiredis/Makefile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/node_modules/hiredis/bench.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/node_modules/hiredis/build/.wafpickle-7" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/node_modules/hiredis/build/Release/hiredis.node" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/node_modules/hiredis/build/Release/hiredis_1.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/node_modules/hiredis/build/Release/reader_1.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/node_modules/hiredis/build/c4che/Release.cache.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/node_modules/hiredis/build/c4che/build.config.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/node_modules/hiredis/build/config.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/node_modules/hiredis/deps/hiredis/CHANGELOG.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/node_modules/hiredis/deps/hiredis/COPYING" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/node_modules/hiredis/deps/hiredis/Makefile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/node_modules/hiredis/deps/hiredis/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/node_modules/hiredis/deps/hiredis/adapters/ae.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/node_modules/hiredis/deps/hiredis/adapters/libev.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/node_modules/hiredis/deps/hiredis/adapters/libevent.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/node_modules/hiredis/deps/hiredis/async.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/node_modules/hiredis/deps/hiredis/async.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/node_modules/hiredis/deps/hiredis/async.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/node_modules/hiredis/deps/hiredis/dict.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/node_modules/hiredis/deps/hiredis/dict.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/node_modules/hiredis/deps/hiredis/example-ae.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/node_modules/hiredis/deps/hiredis/example-libev.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/node_modules/hiredis/deps/hiredis/example-libevent.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/node_modules/hiredis/deps/hiredis/example.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/node_modules/hiredis/deps/hiredis/fmacros.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/node_modules/hiredis/deps/hiredis/hiredis.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/node_modules/hiredis/deps/hiredis/hiredis.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/node_modules/hiredis/deps/hiredis/hiredis.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/node_modules/hiredis/deps/hiredis/libhiredis.a" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/node_modules/hiredis/deps/hiredis/net.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/node_modules/hiredis/deps/hiredis/net.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/node_modules/hiredis/deps/hiredis/net.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/node_modules/hiredis/deps/hiredis/sds.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/node_modules/hiredis/deps/hiredis/sds.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/node_modules/hiredis/deps/hiredis/sds.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/node_modules/hiredis/deps/hiredis/test.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/node_modules/hiredis/hiredis.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/node_modules/hiredis/hiredis.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/node_modules/hiredis/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/node_modules/hiredis/parser_bench.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/node_modules/hiredis/reader.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/node_modules/hiredis/reader.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/node_modules/hiredis/test/reader.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/node_modules/hiredis/wscript" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/tests/buffer_bench.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/tests/hiredis_parser.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/tests/re_sub_test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/tests/reconnect_test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/tests/stress/codec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/tests/stress/pubsub/pub.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/tests/stress/pubsub/run" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/tests/stress/pubsub/server.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/tests/stress/rpushblpop/pub.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/tests/stress/rpushblpop/run" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/tests/stress/rpushblpop/server.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/tests/stress/speed/00" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/tests/stress/speed/plot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/tests/stress/speed/size-rate.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/tests/stress/speed/speed.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/redis/tests/sub_quit_test.js" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/redis/node_modules/hiredis/README" afterPath="$PROJECT_DIR$/server_logic.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../www/get_session.php" afterPath="$PROJECT_DIR$/../www/get_session.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server.js" afterPath="$PROJECT_DIR$/server.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../www/app/connection/SocketConnector.js" afterPath="$PROJECT_DIR$/../www/app/connection/SocketConnector.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../www/app/controller/Chat.js" afterPath="$PROJECT_DIR$/../www/app/controller/Chat.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../www/app/model/Chat.js" afterPath="$PROJECT_DIR$/../www/app/model/Chat.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../www/app/store/Chat.js" afterPath="$PROJECT_DIR$/../www/app/store/Chat.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../www/app/view/Chat.js" afterPath="$PROJECT_DIR$/../www/app/view/Chat.js" />
+    </list>
     <ignored path="nodejs.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,38 +129,61 @@
     <favorites_list name="nodejs" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="server.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/server.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="3" selection-start="754" selection-end="754" vertical-scroll-proportion="0.49707603">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitLogSettings">
+    <option name="myStructureFilterPaths" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/client.js" />
         <option value="$PROJECT_DIR$/client.html" />
+        <option value="$PROJECT_DIR$/test_orm.js" />
+        <option value="$PROJECT_DIR$/node_modules/seq_test.js" />
+        <option value="$PROJECT_DIR$/node_modules/sequelize/lib/associations/has-many.js" />
+        <option value="$PROJECT_DIR$/seq_test.js" />
+        <option value="$PROJECT_DIR$/Database.js" />
+        <option value="$PROJECT_DIR$/client.js" />
+        <option value="$PROJECT_DIR$/node_modules/server_logic.js" />
         <option value="$PROJECT_DIR$/server.js" />
+        <option value="$PROJECT_DIR$/server_logic.js" />
+        <option value="$PROJECT_DIR$/database.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-3" />
-    <option name="width" value="1686" />
-    <option name="height" value="1028" />
+    <option name="y" value="1" />
+    <option name="width" value="1680" />
+    <option name="height" value="1025" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Spelling</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>Spelling</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -78,6 +209,16 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -96,14 +237,18 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-        </subPane>
-      </pane>
-      <pane id="Scope">
-        <subPane subId="Project Files">
           <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nodejs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nodejs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="node_modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -111,13 +256,50 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="options.lastSelected" value="Errors" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
+    <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node JS" working-dir="$PROJECT_DIR$" coffeescript-run="false">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Local">
+      <JSDebuggerConfigurationSettings>
+        <option name="engineId" value="embedded" />
+        <option name="fileUrl" />
+      </JSDebuggerConfigurationSettings>
+      <method />
+    </configuration>
     <list size="0" />
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="DETECT_NESTED_COPIES" value="true" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <configuration useDefault="false">$USER_HOME$/.subversion_IDEA</configuration>
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="dca30bd7-0c2b-49c6-8fe9-171f584ab110" name="Default" comment="" />
@@ -127,23 +309,23 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-3" y="0" width="1686" height="1028" extended-state="6" />
+    <frame x="0" y="1" width="1680" height="1025" extended-state="1" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32915717" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32915717" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19010259" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19079345" sideWeight="0.6708428" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32915717" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="JsTestDriver Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -204,39 +386,85 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/node_modules/socket.io/index.js">
+    <entry file="file://$PROJECT_DIR$/node_modules/mysql/lib/client.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="21" selection-start="594" selection-end="594" vertical-scroll-proportion="0.39766082" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/sequelize/doc/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/socket.io/lib/client.js">
+    <entry file="file://$PROJECT_DIR$/node_modules/sequelize/examples/Associations/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-2.4397662" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client.js">
+    <entry file="file://$PROJECT_DIR$/node_modules/.bin/sequelize">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="36" selection-start="180" selection-end="180" vertical-scroll-proportion="0.11929824" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.9566237" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/socket.io/lib/socket.js">
+    <entry file="file://$PROJECT_DIR$/node_modules/sequelize/lib/associations/has-many.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="16" selection-start="634" selection-end="634" vertical-scroll-proportion="0.0" />
+        <state line="10" column="26" selection-start="372" selection-end="372" vertical-scroll-proportion="0.19953051">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/socket.io/lib/socket.io.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="39" selection-start="358" selection-end="358" vertical-scroll-proportion="0.0" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client.html">
+    <entry file="file://$PROJECT_DIR$/node_modules/socket.io/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="5" selection-start="533" selection-end="533" vertical-scroll-proportion="0.45114595" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/mysql/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/sequelize/examples/sequelize-with-options/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/mysql/lib/mysql.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="19" selection-start="1110" selection-end="1110" vertical-scroll-proportion="0.7406103">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server_logic.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="3" selection-start="121" selection-end="121" vertical-scroll-proportion="0.07981221">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="3" selection-start="754" selection-end="754" vertical-scroll-proportion="0.49707603" />
+        <state line="1" column="23" selection-start="67" selection-end="67" vertical-scroll-proportion="0.019953052">
+          <folding />
+        </state>
       </provider>
     </entry>
   </component>

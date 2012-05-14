@@ -12,7 +12,9 @@ Ext.define('Webinar.model.Chat', {
     ],
 
     events: {
-        ChatAddMessageEvent: 'ChatMessageEvent'
+        ChatAddMessageEvent: 'ChatMessageEvent',
+        ChatAskHistoryEvent: 'CahtAskHistoryEvent',
+        ChatGetHistoryEvent: 'ChatGetHistoryEvent'
     },
 
     /**

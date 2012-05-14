@@ -32,6 +32,13 @@ Ext.define('Webinar.controller.Chat', {
 
         var me = this;
 
+        Webinar.connector.on(me.store.events.GetData, function(data) {
+            console.log('get data');
+            console.log(data.message);
+            me.store.loadData([data.message]);
+            me.updateUI();
+        });
+
         Webinar.connector.on(me.model.events.ChatAddMessageEvent, function(event) {
             var msg = event.message;
             if (msg) {
@@ -43,10 +50,30 @@ Ext.define('Webinar.controller.Chat', {
             }
         });
 
+        Webinar.connector.on(me.store.events.AskData, function() {
+            console.log('get ask data');
+            me.store.shareData(Webinar.connector, me.store.first().data);
+        });
+
+        this.store.synchronize(Webinar.connector);
+
         this.initSendButton();
         this.initInputTextArea();
         this.logTextArea = this.getLogTextArea();
 
+    },
+
+    updateUI: function() {
+        var i = 0;
+        this.model = this.store.first();
+        var messages = this.model.getMessages();
+        for(i = 0; i < messages.length; i++) {
+            this.postMessageToUI(
+                messages[i].who,
+                new Date(messages[i].date),
+                messages[i].text
+            );
+        }
     },
 
     /**

@@ -9,7 +9,6 @@ Ext.define('Webinar.view.Chat', {
 
         var mainPanel = Ext.create('Ext.panel.Panel', {
             layout: 'border',
-            bodyPadding: 10,
             defaults: {
                 collapsible: true,
                 split: true

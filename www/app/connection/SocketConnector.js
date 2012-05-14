@@ -46,8 +46,10 @@ Ext.define("Webinar.connection.SocketConnector", {
         var socket = this.socket;
         var me = this;
         socket.on('connect', function() {
-            me.fireEvent('connect', {
-                url: me.url
+            socket.on('register_user', function() {
+                me.fireEvent('connect', {
+                    url: me.url
+                });
             });
             socket.emit('newUser', {
                 room: Webinar.currentSession.id_webinar
@@ -73,6 +75,14 @@ Ext.define("Webinar.connection.SocketConnector", {
             'id_user': Webinar.currentSession.id_user,
             'event': event,
             'message': message
+        });
+    },
+
+    saveState: function(application, data) {
+        this.socket.emit('saveState', {
+            application: application,
+            time: new Date(),
+            data: data
         });
     }
 });
