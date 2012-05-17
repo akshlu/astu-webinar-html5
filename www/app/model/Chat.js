@@ -47,3 +47,9 @@ Ext.define('Webinar.model.Chat', {
         });
     }
 });
+
+Webinar.model.Chat.events = {
+    ChatAddMessageEvent: 'ChatMessageEvent',
+    ChatAskHistoryEvent: 'CahtAskHistoryEvent',
+    ChatGetHistoryEvent: 'ChatGetHistoryEvent'
+};

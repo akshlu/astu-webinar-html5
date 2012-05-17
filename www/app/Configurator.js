@@ -5,8 +5,8 @@
 Ext.define('Webinar.Configurator', {
     extend: "Ext.util.Observable",
 
-    serverURL: 'http://192.168.1.2:8123',
-    socketIOURL: 'http://192.168.1.2:8123/socket.io/socket.io.js',
+    serverURL: '',
+    socketIOURL: '',
     streamURL: '',
     streamPort: '',
 
@@ -18,7 +18,7 @@ Ext.define('Webinar.Configurator', {
      */
     getConnection: function() {
         var me = this;
-        return Ext.create("Webinar.connection.SocketConnector", {
+        return Ext.create("Webinar.connection.ConnectionManager", {
             url: me.serverURL,
             socketLibraryURL: me.socketIOURL
         });
@@ -35,6 +35,8 @@ Ext.define('Webinar.Configurator', {
             success: function(response) {
                 var object = Ext.JSON.decode(response.responseText);
                 var session = Ext.create('Webinar.Session', object);
+                me.serverURL = session['nodeServer'];
+                me.socketIOURL = session['socketIOURL'];
                 me.fireEvent('getSession', session);
             }
         });

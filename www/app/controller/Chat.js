@@ -28,34 +28,26 @@ Ext.define('Webinar.controller.Chat', {
      */
     initComponents: function() {
         this.store = this.getChatStore();
-        this.model = this.store.first();
 
         var me = this;
 
-        Webinar.connector.on(me.store.events.GetData, function(data) {
-            console.log('get data');
-            console.log(data.message);
+        Webinar.connector.on(me.store.events.StateRestored, function(data) {
             me.store.loadData([data.message]);
             me.updateUI();
         });
 
-        Webinar.connector.on(me.model.events.ChatAddMessageEvent, function(event) {
+        Webinar.connector.on(Webinar.model.Chat.events.ChatAddMessageEvent, function(event) {
             var msg = event.message;
             if (msg) {
-                me.postMessageToUI(
-                    msg.who,
-                    new Date(msg.date),
-                    msg.text
-                );
+                var who = msg.who;
+                var date = new Date(msg.date);
+                var text = msg.text;
+                me.store.first().addMessage(who, date, text);
+                me.postMessageToUI(who, date, text);
             }
         });
 
-        Webinar.connector.on(me.store.events.AskData, function() {
-            console.log('get ask data');
-            me.store.shareData(Webinar.connector, me.store.first().data);
-        });
-
-        this.store.synchronize(Webinar.connector);
+        this.store.restoreState(Webinar.connector);
 
         this.initSendButton();
         this.initInputTextArea();
@@ -65,8 +57,7 @@ Ext.define('Webinar.controller.Chat', {
 
     updateUI: function() {
         var i = 0;
-        this.model = this.store.first();
-        var messages = this.model.getMessages();
+        var messages = this.store.first().getMessages();
         for(i = 0; i < messages.length; i++) {
             this.postMessageToUI(
                 messages[i].who,
@@ -85,16 +76,19 @@ Ext.define('Webinar.controller.Chat', {
         var text = Ext.String.trim(this.getInputTextArea().getValue().toString());
         if (text != '') {
             this.postMessageToUI(who, date, text);
-            this.model.addMessage(who, date, text);
+            this.store.first().addMessage(who, date, text);
             this.store.communicateData(
                 Webinar.connector,
-                this.model.events.ChatAddMessageEvent,
+                Webinar.model.Chat.events.ChatAddMessageEvent,
                 {
                     who: who,
                     date: date,
                     text: text
                 }
             );
+            if (Webinar.currentSession.status == 'owner') {
+                this.store.saveState(Webinar.connector);
+            }
         }
     },
 

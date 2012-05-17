@@ -14,11 +14,12 @@ Ext.define('Webinar.view.FlashVideo', {
             text: 'Включить видео'
         }];
 
-        this.items = [{
+        /*this.items = [{
             xtype: 'flash',
             url: 'Nirs.swf',
             wmode: 'transparent'
-        }];
+        }];*/
+
         this.callParent();
     }
 });

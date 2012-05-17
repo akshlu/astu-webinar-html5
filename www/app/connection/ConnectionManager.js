@@ -3,7 +3,7 @@
  * @param url Адрес сервера
  * @param socketLibraryURL Адрес библиотеки для работы с сокетами
  */
-Ext.define("Webinar.connection.SocketConnector", {
+Ext.define("Webinar.connection.ConnectionManager", {
     extend: "Ext.util.Observable",
 
     url: '',
@@ -59,6 +59,9 @@ Ext.define("Webinar.connection.SocketConnector", {
                     message: message.message
                 });
             });
+            socket.on('restoreState', function(data) {
+
+            });
         });
 
         socket.on('disconnect', function() {
@@ -78,11 +81,29 @@ Ext.define("Webinar.connection.SocketConnector", {
         });
     },
 
+    /**
+     * Сохранить состояние приложения
+     * @param application Имя приложения
+     * @param data Информация приложения
+     */
     saveState: function(application, data) {
         this.socket.emit('saveState', {
             application: application,
             time: new Date(),
             data: data
+        });
+    },
+
+    /**
+     * Послать запрос на получение последнего состояния приложения
+     * @param application Приложение
+     * @param event Тип события, которое возбудит объект соединения для получения результата запроса
+     */
+    restoreState: function(application, event) {
+        this.socket.emit('restoreState', {
+            application: application,
+            event: event,
+            time: new Date()
         });
     }
 });

@@ -20,7 +20,8 @@ var primaryKeyOptions = {
 
 var Application = sequelize.define('application', {
     id_application: primaryKeyOptions,
-    name: Sequelize.TEXT
+    name: Sequelize.TEXT,
+    alias: Sequelize.TEXT
 }, defaultOptions);
 
 var Controller = sequelize.define('controller', {
@@ -47,5 +48,6 @@ exports.Database = {
     sequelize: sequelize,
     Application: Application,
     Controller: Controller,
-    User: User
+    User: User,
+    State: State
 };
