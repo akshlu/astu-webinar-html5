@@ -60,7 +60,7 @@ Ext.define("Webinar.connection.ConnectionManager", {
                 });
             });
             socket.on('restoreState', function(data) {
-
+                me.fireEvent(data.event, data.data);
             });
         });
 

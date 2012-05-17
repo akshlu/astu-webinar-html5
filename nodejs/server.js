@@ -60,8 +60,39 @@ io.sockets.on('connection', function (socket) {
         }
     });
 
-    socket.on('getLastState', function(data) {
-
+    socket.on('restoreState', function(data) {
+        var event = data.event;
+        var time = data.time.toString();
+        if (applications[data.application]) {
+            db.State.find({
+                where: 'application_id_application=' + applications[data.application] + ' and time <\'' + time + '\'',
+                order: 'time DESC'
+            }).success(function(state) {
+                socket.emit('restoreState', {
+                    application: data.application,
+                    event: data.event,
+                    time: state.time,
+                    data: state.data
+                });
+                console.log('send restoreState');
+            });
+        } else {
+            db.Application.find({where: {alias: data.application}}).success(function(app) {
+                applications[data.application] = app.id_application;
+                db.State.find({
+                    where: 'application_id_application=' + applications[data.application] + ' and time <\'' + time + '\'',
+                    order: 'time DESC'
+                }).success(function(state) {
+                    socket.emit('restoreState', {
+                        application: data.application,
+                        event: data.event,
+                        time: state.time,
+                        data: state.data
+                    });
+                    console.log('send restoreState');
+                });
+            });
+        }
     });
 
     socket.on('disconnect', function() {

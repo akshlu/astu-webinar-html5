@@ -38,7 +38,7 @@ var User = sequelize.define('user', {
 
 var State = sequelize.define('state', {
     id_state: primaryKeyOptions,
-    time: Sequelize.TEXT,
+    time: Sequelize.DATE,
     data: Sequelize.TEXT,
     application_id_application: {type: Sequelize.INTEGER},
     webinar_id_webinar: {type: Sequelize.INTEGER}

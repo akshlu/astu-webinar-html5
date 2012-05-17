@@ -32,7 +32,9 @@ Ext.define('Webinar.controller.Chat', {
         var me = this;
 
         Webinar.connector.on(me.store.events.StateRestored, function(data) {
-            me.store.loadData([data.message]);
+            console.log('chat restore state');
+            data = JSON.parse(data);
+            me.store.loadData([data]);
             me.updateUI();
         });
 
