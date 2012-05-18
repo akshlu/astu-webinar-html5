@@ -9,7 +9,7 @@ Ext.application({
     name: "Webinar",
 
     controllers: [
-        'DrawingDesk', 'ParticipantsWidget', 'Chat'
+        'DrawingDesk', 'ParticipantsWidget', 'Chat', 'Presentation'
     ],
 
     /**

@@ -60,6 +60,7 @@ Ext.define("Webinar.connection.ConnectionManager", {
                 });
             });
             socket.on('restoreState', function(data) {
+                data.data = JSON.parse(data.data);
                 me.fireEvent(data.event, data.data);
             });
         });
@@ -87,6 +88,7 @@ Ext.define("Webinar.connection.ConnectionManager", {
      * @param data Информация приложения
      */
     saveState: function(application, data) {
+        data = JSON.stringify(data);
         this.socket.emit('saveState', {
             application: application,
             time: new Date(),
