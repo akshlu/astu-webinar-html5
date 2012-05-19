@@ -7,33 +7,6 @@ Ext.define('Webinar.view.Presentation', {
 
     initComponent: function() {
 
-        this.bbar = [
-            {
-                xtype: 'button',
-                text: 'В начало',
-                itemId: 'presentationBeginButton'
-            },
-            {
-                xtype: 'button',
-                text: 'Назад',
-                itemId: 'presentationPreviousButton'
-            },
-            {
-                xtype: 'numberfield',
-                width: 50
-            },
-            {
-                xtype: 'button',
-                text: 'Далее',
-                itemId: 'presentationNextButton'
-            },
-            {
-                xtype: 'button',
-                text: 'В конец',
-                itemId: 'presentationLastButton'
-            }
-        ];
-
         this.items = [{
             xtype: 'panel',
             itemId: 'presentationPanel',
@@ -41,12 +14,15 @@ Ext.define('Webinar.view.Presentation', {
             items: [{
                 xtype: 'flash',
                 id: 'presentationFlash',
-                url: 'http://static.slidesharecdn.com/swf/ssplayer2.swf',
-                wmode: 'transparent',
+                url: '',
                 flashVars: {
                     doc: "thirst-upload-800x600-1215534320518707-8",
                     startSlide: 1,
                     rel: 0
+                },
+                flashParams: {
+                    allowScriptAccess: 'always',
+                    wmode: 'transparent'
                 }
             }]
          }];

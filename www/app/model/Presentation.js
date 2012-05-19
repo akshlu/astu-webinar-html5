@@ -12,6 +12,10 @@ Ext.define('Webinar.model.Presentation', {
         type: 'int'
     }],
 
+    events: {
+        ChangedCurrentSlide: 'PresentationChangedCurrentSlide'
+    },
+
 
     /**
      * Задать URL презентации
@@ -34,14 +38,18 @@ Ext.define('Webinar.model.Presentation', {
      * @param currentSlide {Number} Номер слайда
      */
     setCurrentSlide: function(currentSlide) {
-        this.set('currentSlide', currentSlide);
+        if (currentSlide >= 1) {
+            this.set('currentSlide', currentSlide);
+            this.fireEvent(this.events.ChangedCurrentSlide, currentSlide);
+        }
     },
 
     /**
      * Получить текущий показываемый на экране слайд
+     * @return {Number} Номер текущего слайда
      */
     getCurrentSlide: function() {
-        this.get('currentSlide');
+        return this.get('currentSlide');
     }
 
 });
