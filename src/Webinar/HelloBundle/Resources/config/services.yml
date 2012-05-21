@@ -1,0 +1,7 @@
+parameters:
+#    webinar_hello.example.class: Webinar\HelloBundle\Example
+
+services:
+#    webinar_hello.example:
+#        class: %webinar_hello.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

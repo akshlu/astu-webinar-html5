@@ -1,0 +1,15 @@
+WebinarHelloBundle_homepage:
+    pattern:  /hello/{name}
+    defaults: { _controller: WebinarHelloBundle:Hello:index }
+
+WebinarHelloBundle_getapp:
+    pattern:  /getapp/
+    defaults: { _controller: WebinarHelloBundle:Hello:getapp }
+
+webinar:
+    pattern:  /webinar/{id_webinar}
+    defaults: { _controller: WebinarHelloBundle:WebinarApplication:webinar }
+
+webinar_getsettings:
+    pattern:  /webinar/getsettings/{id_webinar}
+    defaults: { _controller: WebinarHelloBundle:WebinarApplication:getsettings }

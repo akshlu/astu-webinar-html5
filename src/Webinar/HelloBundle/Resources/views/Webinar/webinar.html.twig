@@ -1,0 +1,19 @@
+{% extends '::base.html.twig' %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{asset('/bundles/webinarhello/scripts/extjs/resources/css/ext-all.css')}}">
+{% endblock %}
+
+{% block body %}
+    {% block javascripts %}
+        {{ parent() }}
+    {% endblock %}
+<!--Flash-->
+<script type="text/javascript" src="{{asset('/bundles/webinarhello/scripts/swfobject.js')}}"></script>
+<!--ExtJS-->
+<script type="text/javascript" src="{{asset('/bundles/webinarhello/scripts/extjs/ext-all-debug-w-comments.js')}}"></script>
+<!--Webinar application-->
+<script type="text/javascript" src="{{asset('/bundles/webinarhello/scripts/app/app.js')}}"></script>
+
+{% endblock %}
