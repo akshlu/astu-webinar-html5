@@ -56,6 +56,9 @@ Ext.define('Webinar.controller.Chat', {
 
     },
 
+    /**
+     * Обновить UI
+     */
     updateUI: function() {
         var i = 0;
         var messages = this.store.first().getMessages();

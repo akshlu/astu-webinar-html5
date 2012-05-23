@@ -74,6 +74,7 @@ Ext.define("Webinar.model.DrawingDesk", {
 
     /**
      * Задать массив спрайтов для отображения на доске
+     * @param page {Number} Номер страницы
      * @param sprites {Array} Массив спрайтов
      */
     setSprites: function(page, sprites) {
@@ -84,6 +85,7 @@ Ext.define("Webinar.model.DrawingDesk", {
 
     /**
      * Получить массив спрайтов, присутствующих на доске
+     * @param page {Number} Номер страницы
      * @return {Array} Массив спрайтов
      */
     getSprites: function(page) {
@@ -105,6 +107,7 @@ Ext.define("Webinar.model.DrawingDesk", {
 
     /**
      * Очистить содержимое доски для рисования
+     * @param page {Number} Номер страницы
      */
     clearSurface: function(page) {
         this.getPage(page).sprites = [];
@@ -112,6 +115,7 @@ Ext.define("Webinar.model.DrawingDesk", {
 
     /**
      * Нарисовать элемент на доске для рисования
+     * @param page {Number} Номер страницы
      * @param sprite {Object} Добавляемый элемент
      */
     addSprite: function(page, sprite) {
@@ -127,6 +131,7 @@ Ext.define("Webinar.model.DrawingDesk", {
 
     /**
      * Удалить элемент с доки для рисования
+     * @param page {Number} Номер страницы
      * @param sprite {Object} Удаляемый элемент
      */
     removeSprite: function(page, sprite) {

@@ -53,6 +53,9 @@ Ext.application({
         Webinar.configurator.getSession();
     },
 
+    /**
+     * Вывести сообщение о невозможности подключиться к серверу
+     */
     showError: function() {
         Ext.MessageBox.show({
             title: 'Ошибка подключения',

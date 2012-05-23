@@ -6,6 +6,9 @@ Ext.define('Webinar.Session', {
     status: '',
     nameOfUser: '',
 
+    /**
+     * Инициализировать объект сессии
+     */
     init: function() {
     }
 });

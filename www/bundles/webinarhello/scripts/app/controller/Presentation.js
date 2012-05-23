@@ -5,6 +5,9 @@ Ext.define('Webinar.controller.Presentation', {
         'Presentation'
     ],
 
+    /**
+     * Инициализировать контроллер
+     */
     init: function() {
         var me = this;
 
@@ -24,6 +27,9 @@ Ext.define('Webinar.controller.Presentation', {
         });
     },
 
+    /**
+     * Инициализировать компоненты
+     */
     initComponents: function() {
         var me = this;
 
@@ -57,6 +63,9 @@ Ext.define('Webinar.controller.Presentation', {
         this.store.restoreState(Webinar.connector);
     },
 
+    /**
+     * Обновить UI
+     */
     updateUI: function() {
         this.model = this.store.first();
         var me = this;

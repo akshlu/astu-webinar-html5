@@ -100,6 +100,9 @@ Ext.define("Webinar.controller.DrawingDesk", {
         });
     },
 
+    /**
+     * Инициализировать компонент рисования
+     */
     initSurface: function() {
         this.surface = this.getSurface();
         var surface = this.surface;
@@ -171,6 +174,9 @@ Ext.define("Webinar.controller.DrawingDesk", {
 
     },
 
+    /**
+     * Инициализировать сетевые события
+     */
     initNetworkHandlers: function() {
         var me = this;
         Webinar.connector.on(this.events.DRAW, function(event) {
@@ -192,6 +198,9 @@ Ext.define("Webinar.controller.DrawingDesk", {
         this.store.restoreState(Webinar.connector);
     },
 
+    /**
+     * Обновить UI
+     */
     updateUI: function() {
         var sprites = this.model.getSprites(this.model.getCurrentPage());
         var i = 0;
