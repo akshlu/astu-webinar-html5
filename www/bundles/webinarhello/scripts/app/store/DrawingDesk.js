@@ -2,17 +2,20 @@ Ext.define("Webinar.store.DrawingDesk", {
     extend: "Ext.data.Store",
     model: "Webinar.model.DrawingDesk",
 
+    name: 'DrawingDesk',
+
     fields: [
-        'currentColor', 'thickness', 'sprites'
+        'currentColor', 'thickness', 'pages', 'sprites'
     ],
+
+    events: {
+        StateRestored: 'DrawingDeskStateRestored'
+    },
 
     data: [{
         currentColor: "#000000",
         thickness: 3,
-        sprites: [],
-        pages: [{
-            sprites: []
-        }],
+        pages: [],
         currentPage: 1
     }],
 
@@ -20,12 +23,18 @@ Ext.define("Webinar.store.DrawingDesk", {
         connection.send(event, data);
     },
 
-    saveState: function() {
-
+    saveState: function(connectionManager) {
+        connectionManager.saveState(
+            this.name,
+            this.first().data
+        );
     },
 
-    restoreState: function() {
-
+    restoreState: function(connectionManager) {
+        connectionManager.restoreState(
+            this.name,
+            this.events.StateRestored
+        );
     }
 
 });

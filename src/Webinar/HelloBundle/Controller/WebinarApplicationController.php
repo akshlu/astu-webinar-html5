@@ -18,6 +18,6 @@ class WebinarApplicationController extends Controller
             throw $this->createNotFoundException('No webinar found');
         }
 
-        return $this->render('WebinarHelloBundle:Webinar:getsettings.json.twig', array('id_webinar' => $id_webinar));
+        return $this->render('WebinarHelloBundle:Webinar:getsettings.json.twig', array('id_webinar' => $id_webinar, 'server_address' => $_SERVER['SERVER_ADDR']));
     }
 }

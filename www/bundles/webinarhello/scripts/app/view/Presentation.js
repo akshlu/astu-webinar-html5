@@ -14,9 +14,9 @@ Ext.define('Webinar.view.Presentation', {
             items: [{
                 xtype: 'flash',
                 id: 'presentationFlash',
-                url: '',
+                url: 'http://static.slidesharecdn.com/swf/ssplayer2.swf',
                 flashVars: {
-                    doc: "thirst-upload-800x600-1215534320518707-8",
+                    doc: "",
                     startSlide: 1,
                     rel: 0
                 },

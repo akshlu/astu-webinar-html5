@@ -18,6 +18,8 @@ Ext.define('Webinar.Configurator', {
      */
     getConnection: function() {
         var me = this;
+        console.log(me.serverURL);
+        console.log(me.socketIOURL);
         return Ext.create("Webinar.connection.ConnectionManager", {
             url: me.serverURL,
             socketLibraryURL: me.socketIOURL

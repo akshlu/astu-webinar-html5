@@ -37,7 +37,6 @@ Ext.application({
                 Webinar.connector = Webinar.configurator.getConnection();
                 Webinar.connector.on({
                         'connect': function() {
-                            console.log('connect');
                             Ext.create("Webinar.view.Viewport");
                         },
                         'disconnect': function() {

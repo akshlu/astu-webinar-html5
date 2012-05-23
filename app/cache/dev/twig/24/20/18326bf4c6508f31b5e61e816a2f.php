@@ -24,8 +24,8 @@ class __TwigTemplate_242018326bf4c6508f31b5e61e816a2f extends Twig_Template
         echo twig_escape_filter($this->env, $this->getContext($context, "id_webinar"), "html", null, true);
         echo "',
     'nameOfUser': 'Алексей Устинов',
-    'nodeServer': 'http://192.168.1.3:8123',
-    'socketIOURL': 'http://192.168.1.3:8123/socket.io/socket.io.js'
+    'nodeServer': 'http://192.168.1.2:8123',
+    'socketIOURL': 'http://192.168.1.2:8123/socket.io/socket.io.js'
 }";
     }
 

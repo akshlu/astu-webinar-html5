@@ -14,10 +14,6 @@ Ext.define("Webinar.model.DrawingDesk", {
             type: "int"
         },
         {
-            name: 'sprites',
-            type: 'auto'
-        },
-        {
             name: 'pages',
             type: 'auto'
         },
@@ -91,15 +87,26 @@ Ext.define("Webinar.model.DrawingDesk", {
      * @return {Array} Массив спрайтов
      */
     getSprites: function(page) {
-        return this.getPage(page).sprites;
-        //return this.get('sprites');
+        var sprites = this.getPage(page).sprites;
+        var copySprites = [];
+        var tmpSprite = {};
+        var currentSprite = {};
+        var i = 0;
+        for(i = 0; i < sprites.length; i++) {
+            tmpSprite = {};
+            currentSprite = sprites[i];
+            for(var property in currentSprite) {
+                tmpSprite[property] = currentSprite[property];
+            }
+            copySprites.push(tmpSprite);
+        }
+        return copySprites;
     },
 
     /**
      * Очистить содержимое доски для рисования
      */
     clearSurface: function(page) {
-        //this.setSprites([]);
         this.getPage(page).sprites = [];
     },
 
@@ -108,8 +115,13 @@ Ext.define("Webinar.model.DrawingDesk", {
      * @param sprite {Object} Добавляемый элемент
      */
     addSprite: function(page, sprite) {
-        //this.getSprites().push(sprite);
-        this.getPage(page).sprites.push(sprite);
+        var copySprite = {};
+        for(var property in sprite) {
+            if (typeof property !== "function") {
+                copySprite[property] = sprite[property];
+            }
+        }
+        this.getPage(page).sprites.push(copySprite);
         this.fireChangedEvent();
     },
 
@@ -118,7 +130,6 @@ Ext.define("Webinar.model.DrawingDesk", {
      * @param sprite {Object} Удаляемый элемент
      */
     removeSprite: function(page, sprite) {
-        //Ext.Array.remove(this.getSprites(), sprite);
         Ext.Array.remove(this.getPage(page).sprites, sprite);
         this.fireChangedEvent();
     },

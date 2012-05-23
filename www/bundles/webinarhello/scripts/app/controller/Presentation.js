@@ -15,7 +15,7 @@ Ext.define('Webinar.controller.Presentation', {
             '#presentationFlash': {
                 render: function() {
                     me.flashContatiner = Ext.ComponentQuery.query("#presentationFlash")[0];
-                    me.flashContatiner.url = me.model.getUrl();
+                    me.flashContatiner.flashVars['doc'] = me.model.getUrl();
                 },
                 afterrender: function() {
                     me.initComponents();

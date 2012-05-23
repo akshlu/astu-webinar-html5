@@ -10,7 +10,7 @@ Ext.define('Webinar.store.Presentation', {
     },
 
     data: [{
-        url: 'http://static.slidesharecdn.com/swf/ssplayer2.swf',
+        url: 'thirst-upload-800x600-1215534320518707-8',
         currentSlide: 1
     }],
 

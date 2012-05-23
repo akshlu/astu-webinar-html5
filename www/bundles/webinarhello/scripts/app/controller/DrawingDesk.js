@@ -18,11 +18,11 @@ Ext.define("Webinar.controller.DrawingDesk", {
     /**
      * При запуске представления доски для рисования
      */
-    onLaunch: function() {
+    init: function() {
 
         var me = this;
-        var store = this.getDrawingDeskStore();
-        this.model = store.first();
+        this.store = this.getDrawingDeskStore();
+        this.model = this.store.first();
 
         this.control({
             '#drawingdesk': {
@@ -154,13 +154,14 @@ Ext.define("Webinar.controller.DrawingDesk", {
                     );
 
                     surface.add(drawingObject).show(true);
-
                     me.oldMouseCoordinates = mouseCoordinates;
                 }
             },
             'mouseup': function(event) {
                 me.isMouseDown = false;
-                console.log(me.model.data);
+                if (Webinar.currentSession.status == 'owner') {
+                    me.store.saveState(Webinar.connector);
+                }
             }/*,
             'mouseleave': function(event) {
                 me.isMouseDown = false;
@@ -174,11 +175,29 @@ Ext.define("Webinar.controller.DrawingDesk", {
         var me = this;
         Webinar.connector.on(this.events.DRAW, function(event) {
             me.surface.add(event.message).show(true);
+            me.model.addSprite(me.model.getCurrentPage(), event.message);
         });
 
         Webinar.connector.on(this.events.CLEAR, function() {
             me.clearSurface();
         });
+
+        Webinar.connector.on(this.store.events.StateRestored, function(data) {
+            me.store.loadData([data]);
+            console.log(me.store.first());
+            me.model = me.store.first();
+            me.updateUI();
+        });
+
+        this.store.restoreState(Webinar.connector);
+    },
+
+    updateUI: function() {
+        var sprites = this.model.getSprites(this.model.getCurrentPage());
+        var i = 0;
+        for(i = 0; i < sprites.length; i++) {
+            this.surface.add(sprites[i]).show(true);
+        }
     },
 
     getSurface: function() {
