@@ -10,7 +10,7 @@ Ext.application({
     appFolder: '/bundles/webinarhello/scripts/app',
 
     controllers: [
-        'DrawingDesk', 'ParticipantsWidget', 'Chat', 'Presentation'
+        'DrawingDesk', 'ParticipantsWidget', 'Chat', 'Presentation', 'FlashVideo'
     ],
 
     /**

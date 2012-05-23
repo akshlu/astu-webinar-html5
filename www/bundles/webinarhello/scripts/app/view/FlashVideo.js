@@ -7,18 +7,21 @@ Ext.define('Webinar.view.FlashVideo', {
 
     initComponent: function() {
 
-
         this.tbar = [{
             xtype: 'button',
             itemId: 'FlashVideoOnButton',
             text: 'Включить видео'
         }];
 
-        /*this.items = [{
+        this.items = [{
             xtype: 'flash',
-            url: 'Nirs.swf',
-            wmode: 'transparent'
-        }];*/
+            itemId: 'flashVideo',
+            url: '/bundles/webinarhello/flash/VideoWidget.swf',
+            flashParams: {
+                allowScriptAccess: 'always',
+                wmode: 'transparent'
+            }
+        }];
 
         this.callParent();
     }

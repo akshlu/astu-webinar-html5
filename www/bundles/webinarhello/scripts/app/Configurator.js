@@ -8,7 +8,6 @@ Ext.define('Webinar.Configurator', {
     serverURL: '',
     socketIOURL: '',
     streamURL: '',
-    streamPort: '',
 
     events: ['getSession'],
 
@@ -44,6 +43,7 @@ Ext.define('Webinar.Configurator', {
                     var session = Ext.create('Webinar.Session', object);
                     me.serverURL = session['nodeServer'];
                     me.socketIOURL = session['socketIOURL'];
+                    me.streamURL = session['streamURL'];
                     me.fireEvent('getSession', session);
                 },
                 failure: function() {

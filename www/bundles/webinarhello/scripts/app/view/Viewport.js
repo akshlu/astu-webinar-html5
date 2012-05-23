@@ -71,7 +71,7 @@ Ext.define("Webinar.view.Viewport", {
         //participants.show();
         chat.show();
         presentation.show();
-        //flashVideo.show();
+        flashVideo.show();
 
         this.items = [
             panel
